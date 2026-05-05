@@ -1,2 +1,6 @@
 packages:
   - 'packages/*'
+  # Explicitly include submodule packages to ensure they are part of the root workspace
+  - 'packages/formular-atomos'
+  - 'packages/formular-atomos/demo'
+  - 'packages/formular-atomos/packages/*'
