@@ -1,3 +1,9 @@
 [submodule "packages/formular-atomos"]
 	path = packages/formular-atomos
 	url = https://github.com/binaryjack/formular-atomos
+[submodule "packages/formular.dev"]
+	path = packages/formular.dev
+	url = https://github.com/binaryjack/formular.dev.git
+[submodule "packages/atomos.dev"]
+	path = packages/atomos.dev
+	url = https://github.com/binaryjack/atomos.dev.git
