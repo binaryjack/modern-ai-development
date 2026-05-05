@@ -5,13 +5,13 @@
  * @returns {Promise<string>} A promise that resolves with the search results summary.
  */
 export const fetchEarthMoonCycles = async (): Promise<string> => {
-  // NOTE: In a real application, you would use a proper backend service 
+  // NOTE: In a real application, you would use a proper backend service
   // or dedicated Google Search API key here for secure and reliable calls.
-  console.log("Calling external Google Search API...");
+  console.log('Calling external Google Search API...');
 
   try {
     // Simulate an API call delay
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
     // Placeholder for actual search result parsing logic
     const mockResults = `
@@ -27,7 +27,7 @@ export const fetchEarthMoonCycles = async (): Promise<string> => {
 
     return mockResults;
   } catch (error) {
-    console.error("Failed to fetch earth-moon cycle data:", error);
-    throw new Error("Could not retrieve search results.");
+    console.error('Failed to fetch earth-moon cycle data:', error);
+    throw new Error('Could not retrieve search results.');
   }
 };
