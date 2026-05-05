@@ -44,6 +44,14 @@
     
     <naming mandatory="true">
       <rule>Naming: Follow strictly the definitions in architecture-rules.xml</rule>
+      <rule id="naming-enforcement" priority="CRITICAL">
+        <requirement>Strict kebab-case for ALL file names.</requirement>
+        <forbidden-pattern>^[A-Z].*</forbidden-pattern> <!-- Bloque le PascalCase dès la première lettre -->
+        <forbidden-pattern>.*[A-Z].*</forbidden-pattern> <!-- Bloque tout CamelCase -->
+        <rejection-trigger>
+          If filename contains ANY uppercase letter, trigger ERROR immediately.
+        </rejection-trigger>
+      </rule>
       <rule type="FORBIDDEN">camelCase file names - REJECT IMMEDIATELY</rule>
       <rule type="FORBIDDEN">PascalCase file names - REJECT IMMEDIATELY</rule>
       <rule type="REQUIRED">*.types.ts for type definitions ONLY</rule>

@@ -5,29 +5,29 @@
 
 ## 1. IMMEDIATE REJECTIONS (STOP & REPORT)
 
-Toute violation déclenche le format ERROR et l'arrêt de la génération[cite: 4, 6, 9] :
+Any violation triggers the ERROR format and halts generation[cite: 4, 6, 9]:
 
-- **Type `any`** : Interdit (Zéro exception)[cite: 4, 6, 8].
-- **Naming** : Tout fichier hors `kebab-case`[cite: 4, 6, 7].
-- **Architecture** : Pas de `class`, pas d'arrow functions au niveau module[cite: 4, 6, 8].
-- **Atomicité** : Un seul export par fichier[cite: 4, 6, 7].
-- **Certitude** : Ne jamais deviner. Si inconnu -> "Unknown"[cite: 4, 6, 8].
+- **Type `any`** : Forbidden (Zero exception)[cite: 4, 6, 8].
+- **Naming** : Any file not in `kebab-case`[cite: 4, 6, 7].
+- **Architecture** : No `class`, no module-level arrow functions[cite: 4, 6, 8].
+- **Atomicity** : One export per file[cite: 4, 6, 7].
+- **Certainty** : Never guess. If unknown -> "Unknown"[cite: 4, 6, 8].
 
 ## 2. MANDATORY OUTPUT
 
-Minimaliste, honnêteté brutale, aucune politesse[cite: 4, 6].
-En cas d'erreur :
+Minimalist, brutal honesty, no politeness[cite: 4, 6].
+In case of error:
 ERROR: [description]
 FILE: [path]:[line]:[column]
-CAUSE: [règle enfreinte]
-FIX: [solution exacte] OR UNKNOWN: [besoin][cite: 4, 6, 9]
+CAUSE: [violated_rule]
+FIX: [exact_solution] OR UNKNOWN: [need][cite: 4, 6, 9]
 
 ## 3. QUALITY GATES
 
-- **TypeScript**: 0 erreur (`tsc --noEmit`)[cite: 2, 3, 6].
-- **Tests**: 95% couverture minimum[cite: 2, 3, 6].
-- **Lint**: 0 erreur, 0 avertissement[cite: 2, 3, 6].
-- **Security**: 0 vulnérabilité critique/haute[cite: 3, 6].
+- **TypeScript**: 0 errors (`tsc --noEmit`)[cite: 2, 3, 6].
+- **Tests**: Minimum 95% coverage[cite: 2, 3, 6].
+- **Lint**: 0 errors, 0 warnings[cite: 2, 3, 6].
+- **Security**: 0 critical/high vulnerability[cite: 3, 6].
 
 ## 4. CHECK LIST WORKFLOW
 
