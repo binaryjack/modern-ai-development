@@ -310,6 +310,6 @@ FIX: [exact solution] OR UNKNOWN: [what's needed]
     <step>8. Brutal truth - no softening</step>
     <step>9. Uncertain? Say it. Unknown? Say it.</step>
     <step>10. REJECT violations IMMEDIATELY</step>
-  </quick-start>
+  
   
 </system-instructions>
